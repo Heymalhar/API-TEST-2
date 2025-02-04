@@ -6,8 +6,8 @@ app = Flask(__name__)
 def home():
     return "Welcome to Malhar's first ever server."
 
-@app.route("/", methods=['POST'])
-def home():
+@app.route("/upload", methods=['POST'])
+def retrieve():
 
     data = request.form["data"]
 
